@@ -25,11 +25,11 @@ Calibrates models against the Basel III  system (target < 5% breach rate).
 Computes Expected Shortfall (ES) to measure tail risk severity.
 
 Key Features
-Volatility Proxies: Replaces standard Close-to-Close volatility with Parkinson and Garman-Klass estimators.
-Look-Ahead Bias Elimination: Rigorous feature lagging ensures realistic out-of-sample performance.
-Hyperparameter Tuning: Automated RandomizedSearchCV for XGBoost optimization.
-Risk Metrics: Comprehensive calculation of VaR, ES, and Traffic Light breach analysis.
-Ensemble Forecasting: Combines statistical and ML approaches for superior error reduction.
+1. Volatility Proxies: Replaces standard Close-to-Close volatility with Parkinson and Garman-Klass estimators.
+2. Look-Ahead Bias Elimination: Rigorous feature lagging ensures realistic out-of-sample performance.
+3. Hyperparameter Tuning: Automated RandomizedSearchCV for XGBoost optimization.
+4. isk Metrics: Comprehensive calculation of VaR, ES, and Traffic Light breach analysis.
+5. Ensemble Forecasting: Combines statistical and ML approaches for superior error reduction.
 
 Results
 1. Forecast Accuracy
@@ -70,12 +70,12 @@ tabulate
 
 Usage
 1. Run the Notebook Execute volatility_risk.ipynb. The notebook is self-contained and proceeds through the following steps:
-Data Loading: Loads AAPL data and filters for the 2015-2025 regime.
-GARCH Modelling: Fits statistical benchmarks and runs rolling forecasts.
-XGBoost Training: Generates intraday features, lags data, tunes hyperparameters, and predicts.
-Evaluation: Calculates RMSE, MAPE, and visualizes forecasts.
-Risk Engine: Computes VaR/ES and generates breach plots.
-Strategy: Backtests the Volatility Targeting logic.
+  a. Data Loading: Loads AAPL data and filters for the 2015-2025 regime.
+  b. GARCH Modelling: Fits statistical benchmarks and runs rolling forecasts.
+  c. XGBoost Training: Generates intraday features, lags data, tunes hyperparameters, and predicts.
+  d. Evaluation: Calculates RMSE, MAPE, and visualizes forecasts.
+  e. Risk Engine: Computes VaR/ES and generates breach plots.
+  f. Strategy: Backtests the Volatility Targeting logic.
 
 2. Data Source
 Ensure AAPL.csv (or AAPL1.csv) is placed in the correct directory path specified in the notebook.
